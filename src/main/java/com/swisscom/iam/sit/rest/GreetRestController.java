@@ -11,9 +11,4 @@ public class GreetRestController {
     public String hello(){
         return "Hello";
     }
-
-    @GetMapping("/greet")
-    public GreetingDto greet(@RequestParam(name = "name") String name, @RequestParam(name = "greeting") String greeting){
-        return new GreetingDto(name, greeting);
-    }
 }
